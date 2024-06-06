@@ -1,0 +1,53 @@
+@import './index.css';
+
+.personal-details-container{
+  display: flex;
+  flex-direction: column;
+  padding: var(--margin-3);
+}
+.personal-details-trigger{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--margin-3);
+  padding-left: var(--padding-1);
+  padding-right: var(--padding-1);
+  background-color: white;
+  border: black solid 0px;
+  cursor: pointer;
+}
+.caret{
+  height: 100%;
+}
+.caret.inactive{
+  transition: 0.3s;
+}
+.active.caret{
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+.personal-details-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+  padding-left: var(--padding-1);
+  padding-right: var(--padding-1);
+  margin-top: var(--margin-2);
+
+  opacity: 0;
+  display: none;
+  transition: 0.3s ease-in allow-discrete;
+  width: 100%;
+}
+.personal-details-form.active{
+  opacity: 1;
+  display: flex;
+}
+
+.personal-details-form input{
+  padding: var(--padding-1);
+  width: 100%;
+}
