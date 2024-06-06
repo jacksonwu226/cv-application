@@ -19,13 +19,13 @@
 }
 .caret{
   height: 100%;
-}
-.caret.inactive{
   transition: 0.3s;
-}
-.active.caret{
   transform: rotate(180deg);
+}
+.caret.active{  
   transition: 0.3s;
+  transform: rotate(0deg);
+
 }
 .personal-details-form{
   display: flex;
