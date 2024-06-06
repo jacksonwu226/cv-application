@@ -31,13 +31,13 @@
   --padding-9: 4.5rem;
   --padding-10: 5rem;
 
-  --theme-color-1: #F1E5D1;
-  --theme-color-2: #DBB5B5;
-  --theme-color-3: #C39898;
+  --theme-color-1: #f1e5d1;
+  --theme-color-2: #dbb5b5;
+  --theme-color-3: #c39898;
   --theme-color-4: #987070;
-  
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -46,21 +46,21 @@
 
 *,
 *::after,
-*::before{
+*::before {
   margin: 0;
-  padding:  0;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }

@@ -13,8 +13,11 @@ function App() {
 
   return (
     <>
-      <PersonalDetails personalDetails={personalDetails} setPersonalDetails={setPersonalDetails} />
-      <ResumePreview personalDetails={personalDetails}/>
+      <PersonalDetails
+        personalDetails={personalDetails}
+        setPersonalDetails={setPersonalDetails}
+      />
+      <ResumePreview personalDetails={personalDetails} />
     </>
   );
 }

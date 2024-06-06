@@ -1,11 +1,11 @@
-@import './index.css';
+@import "./index.css";
 
-.personal-details-container{
+.personal-details-container {
   display: flex;
   flex-direction: column;
   padding: var(--margin-3);
 }
-.personal-details-trigger{
+.personal-details-trigger {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -17,17 +17,16 @@
   border: black solid 0px;
   cursor: pointer;
 }
-.caret{
+.caret {
   height: 100%;
   transition: 0.3s;
   transform: rotate(180deg);
 }
-.caret.active{  
+.caret.active {
   transition: 0.3s;
   transform: rotate(0deg);
-
 }
-.personal-details-form{
+.personal-details-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,12 +41,12 @@
   transition: 0.3s ease-in allow-discrete;
   width: 100%;
 }
-.personal-details-form.active{
+.personal-details-form.active {
   opacity: 1;
   display: flex;
 }
 
-.personal-details-form input{
+.personal-details-form input {
   padding: var(--padding-1);
   width: 100%;
 }
