@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./personalDetails.css";
-import caretIcon from "./assets/menu-up-outline.svg";
+import caretIcon from "./assets/menu-down.svg";
 
 export default function PersonalDetails({
   personalDetails,
