@@ -1,6 +1,6 @@
 import {v4 as uuidv4} from 'uuid';
 
-export default class Education {
+export default class EducationItem {
   constructor(
     school = "",
     degree = "",
@@ -13,7 +13,7 @@ export default class Education {
     this._startDate = startDate;
     this._endDate = endDate;
     this._location = location;
-    this._id = u4();
+    this._id = uuidv4();
   }
   get school() {
     return this._school;

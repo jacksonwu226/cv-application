@@ -37,7 +37,7 @@
   --theme-color-4: #987070;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
+  box-sizing: border-box;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
