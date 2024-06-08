@@ -16,12 +16,10 @@
   background-color: white;
   border: black solid 0px;
   cursor: pointer;
-  
 }
 .caret {
   height: 100%;
   transition: 0.3s;
-  /* transform: rotate(180deg); */
 }
 .caret.active {
   transition: 0.3s;
