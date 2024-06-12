@@ -37,7 +37,7 @@
   margin-top: var(--margin-2);
 
   opacity: 0;
-  transform: translateY(-20%);
+  transform: translateY(-1rem);
   transition: all 0.3s ease-in-out allow-discrete;
   width: 100%;
   display:none;
@@ -64,6 +64,8 @@
   padding: var(--padding-1);
   width: 100%;
 }
+
+
 .education-list-item {
   width: 100%;
 }
@@ -89,6 +91,6 @@
   .education-info-container.active,
   .education-list-container.active{
     opacity: 0;
-    transform: translateY(-20%);
+    transform: translateY(-1rem);
   }
 }
