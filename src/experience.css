@@ -69,7 +69,7 @@
   padding: var(--padding-1);
   width: 100%;
 }
-.experience-info-form textarea{
+.experience-info-form textarea {
   width: 100%;
   height: 6rem;
   padding: var(--padding-1);
@@ -103,7 +103,7 @@
 /* need to figure out why this is necessary */
 @starting-style {
   .experience-info-container.active,
-  .experience-list-container.active{
+  .experience-list-container.active {
     opacity: 0;
     transform: translateY(-1rem);
   }

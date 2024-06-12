@@ -13,8 +13,21 @@ function App() {
     email: "",
     phoneNumber: "",
   });
-  const initialEducationItem = new EducationItem("UCI", "ENGR", "2020", "2024", "Irvine, CA");
-  const initialExperienceItem = new ExperienceItem("Texas Instruments", "Software Engineer", "2020", "2024", "Irvine, CA", "Worked on so and so projects");
+  const initialEducationItem = new EducationItem(
+    "UCI",
+    "ENGR",
+    "2020",
+    "2024",
+    "Irvine, CA",
+  );
+  const initialExperienceItem = new ExperienceItem(
+    "Texas Instruments",
+    "Software Engineer",
+    "2020",
+    "2024",
+    "Irvine, CA",
+    "Worked on so and so projects",
+  );
   const [educationList, setEducationList] = useState([initialEducationItem]);
   const [experienceList, setExperienceList] = useState([initialExperienceItem]);
 
@@ -24,8 +37,14 @@ function App() {
         personalDetails={personalDetails}
         setPersonalDetails={setPersonalDetails}
       />
-      <Education educationList={educationList} setEducationList={setEducationList} />
-      <Experience experienceList={experienceList} setExperienceList={setExperienceList} />
+      <Education
+        educationList={educationList}
+        setEducationList={setEducationList}
+      />
+      <Experience
+        experienceList={experienceList}
+        setExperienceList={setExperienceList}
+      />
       <ResumePreview personalDetails={personalDetails} />
     </>
   );

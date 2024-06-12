@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 export default class ExperienceItem {
   constructor(
@@ -7,9 +7,9 @@ export default class ExperienceItem {
     startDate = "",
     endDate = "",
     location = "",
-    description = ""
+    description = "",
   ) {
-    this._id = uuidv4();  // Generate a unique identifier for each instance
+    this._id = uuidv4(); // Generate a unique identifier for each instance
     this._company = company;
     this._position = position;
     this._startDate = startDate;

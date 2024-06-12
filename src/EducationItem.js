@@ -1,4 +1,4 @@
-import {v4 as uuidv4} from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 export default class EducationItem {
   constructor(
@@ -45,10 +45,10 @@ export default class EducationItem {
   set location(newLocation) {
     this._location = newLocation;
   }
-  get id(){
+  get id() {
     return this._id;
   }
-  set id(newId){
+  set id(newId) {
     this._id = newId;
   }
 }
