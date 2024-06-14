@@ -3,9 +3,13 @@
 .education-section-container {
   display: flex;
   flex-direction: column;
-  padding: var(--margin-3);
+  padding: var(--margin-1);
+  margin: var(--margin-2);
   width: 100%;
 
+  background-color: var(--theme-color-2);
+  border-radius: 1rem;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 }
 .education-section-trigger {
   box-sizing: border-box;
@@ -18,6 +22,7 @@
   background-color: white;
   border: black solid 0px;
   cursor: pointer;
+  background-color: var(--theme-color-2);
 }
 .caret {
   height: 100%;
@@ -74,8 +79,9 @@
   display: flex;
   justify-content: space-between;
   padding: var(--padding-1) var(--padding-2);
-  border: 1px solid black;
-  background-color: white;
+  border: 0px solid black;
+  border-radius: 4px;
+  background-color: #F0F0F0;
 }
 .remove-btn {
   cursor: pointer;

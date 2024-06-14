@@ -56,7 +56,7 @@ export default function PersonalDetails({
           defaultValue={personalDetails.phoneNumber}
         ></input>
 
-        <button type="submit">Save</button>
+        <button className="primary-button" type="submit">Save</button>
       </form>
     </div>
   );

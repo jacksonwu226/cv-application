@@ -1,21 +1,103 @@
+@import "index.css";
+
+body{
+  background-color: var(--theme-color-1);
+}
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
+.primary-button,
+.secondary-button {
+  top-margin: var(--margin-1);
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Primary Button */
+.primary-button {
+  background-color: #95AEBF; /* Primary color */
+  color: #333333;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+  background-color: var(--theme-color-1); /* Darker shade of primary color */
+}
+
+/* Secondary Button */
+.secondary-button {
+  background-color: var(--theme-color-4); /* Secondary color */
+  color: black;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+  background-color: var(--theme-color-3); /* Darker shade of secondary color */
+}
+
+/* Base Input and Textarea Styles */
+input,
+textarea {
+  background-color: #F0F0F0;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da; /* Border color */
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff; /* Focus border color */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus shadow */
+}
+
+/* Disabled State */
+input:disabled,
+textarea:disabled {
+  background-color: #e9ecef; /* Light gray background for disabled state */
+  cursor: not-allowed;
+}
+
+/* Error State */
+.input-error {
+  border-color: #dc3545; /* Error border color */
+}
+
+.input-error:focus {
+  box-shadow: 0 0 5px rgba(220, 53, 69, 0.5); /* Error shadow on focus */
+}
+
+
 .app-content{
   display: grid;
   grid-template-columns: auto 1fr;
+  background-color: var(--theme-color-3);
+  min-width: 500px;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
 
 .data-input-panel{
   width: 400px;
+  padding: var(--padding-2);
 }
 
 
-@media(max-width: 1200px){
+@media(max-width: 1300px){
   .app-content{
     display: flex;
     flex-direction: column;
@@ -34,37 +116,25 @@
 
 @media (max-width: 900px) {
   .page {
-    transform-origin: top; /* Set transform origin to top */
-    transform: scale(0.9); /* Scale down to 50% */
+    transform-origin: top; 
+    transform: scale(0.88);
   }
 }
 @media (max-width: 800px) {
   .page {
-    transform-origin: top; /* Set transform origin to top */
-    transform: scale(0.8); /* Scale down to 50% */
+    transform-origin: top;
+    transform: scale(0.73); 
   }
 }
 @media (max-width: 700px) {
   .page {
-    transform-origin: top; /* Set transform origin to top */
-    transform: scale(0.7); /* Scale down to 50% */
+    transform-origin: top;
+    transform: scale(0.63);
   }
 }
 @media (max-width: 600px) {
   .page {
-    transform-origin: top; /* Set transform origin to top */
-    transform: scale(0.6); /* Scale down to 50% */
-  }
-}
-@media (max-width: 500px) {
-  .page {
-    transform-origin: top; /* Set transform origin to top */
-    transform: scale(0.5); /* Scale down to 50% */
-  }
-}
-@media (max-width: 400px) {
-  .page {
-    transform-origin: top; /* Set transform origin to top */
-    transform: scale(0.4); /* Scale down to 50% */
+    transform-origin: top;
+    transform: scale(0.58);
   }
 }

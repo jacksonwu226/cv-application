@@ -158,8 +158,8 @@ function EducationForm({
           }
         />
         <div className="button-container">
-          <button type="submit">Save</button>
-          <button type="button" onClick={handleCancel}>
+          <button className="primary-button" type="submit">Save</button>
+          <button className="secondary-button" type="button" onClick={handleCancel}>
             Cancel
           </button>
         </div>
@@ -212,7 +212,7 @@ function EducationList({
         );
       })}
       <div className="add-new-education-btn">
-        <button type="button" onClick={addNewEducationItemDisplay}>
+        <button className="primary-button" type="button" onClick={addNewEducationItemDisplay}>
           Add New
         </button>
       </div>

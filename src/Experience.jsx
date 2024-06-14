@@ -97,7 +97,7 @@ function ExperienceList({
         );
       })}
       <div className="add-new-experience-btn">
-        <button type="button" onClick={addNewExpItemDisplay}>
+        <button className="primary-button" type="button" onClick={addNewExpItemDisplay}>
           Add New
         </button>
       </div>
@@ -210,8 +210,8 @@ function ExperienceForm({
           } // Added defaultValue for description field
         />
         <div className="button-container">
-          <button type="submit">Save</button>
-          <button type="button" onClick={handleCancel}>
+          <button className="primary-button" type="submit">Save</button>
+          <button className="secondary-button" type="button" onClick={handleCancel}>
             Cancel
           </button>
         </div>

@@ -91,7 +91,7 @@ function PrintButton() {
   };
 
   return (
-    <button onClick={handlePrint} className="no-print">
+    <button className="primary-button no-print" onClick={handlePrint}>
       Print Resume
     </button>
   );
