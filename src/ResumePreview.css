@@ -4,7 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: var(--margin-1);
+
+  margin: var(--margin-2);
+
 
   --line-spacing: 7px;
   --line-break-spacing: 14px;
@@ -17,7 +20,7 @@
   min-height: 11in;
   background-color: white;
   margin: 10px 0;
-  padding: 1in;
+  padding: 0.5in;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
