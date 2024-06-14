@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
   --font-size-1: 1rem;
   --font-size-2: 1.5rem;
@@ -31,12 +33,10 @@
   --padding-9: 4.5rem;
   --padding-10: 5rem;
 
-  --theme-color-1: #f1e5d1;
-  --theme-color-2: #dbb5b5;
-  --theme-color-3: #c39898;
-  --theme-color-4: #987070;
-
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --theme-color-1: #B3C8CF;
+  --theme-color-2: #BED7DC;
+  --theme-color-3: #F1EEDC;
+  --theme-color-4: #E5DDC5;
   box-sizing: border-box;
   font-synthesis: none;
   text-rendering: optimizeLegibility;

@@ -43,21 +43,23 @@ function App() {
   const [experienceList, setExperienceList] = useState(initialExperienceItemArray);
 
   return (
-    <>
-      <PersonalDetails
-        personalDetails={personalDetails}
-        setPersonalDetails={setPersonalDetails}
-      />
-      <Education
-        educationList={educationList}
-        setEducationList={setEducationList}
-      />
-      <Experience
-        experienceList={experienceList}
-        setExperienceList={setExperienceList}
-      />
+    <div className="app-content">
+      <div className="data-input-panel">
+        <PersonalDetails
+          personalDetails={personalDetails}
+          setPersonalDetails={setPersonalDetails}
+        />
+        <Education
+          educationList={educationList}
+          setEducationList={setEducationList}
+        />
+        <Experience
+          experienceList={experienceList}
+          setExperienceList={setExperienceList}
+        />
+      </div>
       <ResumePreview personalDetails={personalDetails} educationList={educationList} experienceList={experienceList}/>
-    </>
+    </div>
   );
 }
 
