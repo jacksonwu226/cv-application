@@ -1,0 +1,136 @@
+@import "index.css";
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  --line-spacing: 7px;
+  --line-break-spacing: 14px;
+  --normal-font-size: 14px;
+  --heading-font-size: 20px;
+}
+
+.page {
+  width: 8.5in;
+  min-height: 11in;
+  background-color: white;
+  margin: 10px 0;
+  padding: 1in;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.personal-details-preview,
+.education-preview,
+.experience-preview {
+  margin-bottom: 20px;
+  page-break-inside: avoid; /* Avoid breaking inside these elements */
+}
+
+.name-preview {
+  font-size: var(--heading-font-size);
+  font-weight: bold;
+  text-align: center;
+}
+
+.personal-additional-details-container{
+  margin-top: var(--line-spacing);
+  margin-bottom: var(--line-spacing);
+  display: flex;
+  justify-content: center;
+  gap: var(--line-spacing);
+  align-items: center;
+  font-size: var(--normal-font-size);
+}
+
+hr.solid-divider{
+  border-top: 2px solid black;
+  margin-bottom: var(--line-spacing);
+}
+
+.education-preview h1, .experience-preview h1{
+  font-size: var(--heading-font-size);
+  text-align: center;
+}
+
+.education-school-name, .experience-company-name{
+  font-weight: bold;
+}
+
+.education-item-preview{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  column-gap: var(--gap-4);
+  justify-items: start;
+  page-break-inside: avoid;
+  margin-bottom: var(--line-spacing);
+  margin-top: var(--line-spacing);
+}
+
+.experience-item-preview{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  column-gap: var(--gap-4);
+  justify-items: start;
+  align-items: start;
+  page-break-inside: avoid;
+  margin-bottom: var(--line-spacing);
+  margin-top: var(--line-spacing);
+}
+.experience-description{
+  grid-column: 2 / 3;
+  text-align: left;
+}
+
+.education-school-name,
+.education-degree-name,
+.education-date,
+.education-location,
+.experience-company-name,
+.experience-position,
+.experience-date,
+.experience-location,
+.experience-description {
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--line-spacing);
+}
+
+
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  body, .page-container {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .page {
+    width: 100%;
+    min-height: auto;
+    box-shadow: none;
+    margin: 1in; /* Adjust margin for print */
+    padding: 1in; /* Adjust padding for print */
+    page-break-after: always;
+  }
+
+  .personal-details-preview,
+  .education-preview,
+  .experience-preview {
+    margin-bottom: 14px; /* Adjust margin bottom for print */
+  }
+  
+  hr.solid-divider{
+    margin-bottom: 7px;
+    margin-top: 7px;
+  }
+  .education-item-preview, .experience-item-preview{
+    margin-bottom: 14px;
+  }
+}

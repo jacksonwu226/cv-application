@@ -9,27 +9,38 @@ import Experience from "./Experience";
 
 function App() {
   const [personalDetails, setPersonalDetails] = useState({
-    name: "",
-    email: "",
-    phoneNumber: "",
+    name: "John Doe",
+    email: "johndoe2024@placeholder.net",
+    phoneNumber: "123-456-7891",
   });
   const initialEducationItem = new EducationItem(
-    "UCI",
-    "ENGR",
+    "University of California, Irvine",
+    "Computer Engineering",
     "2020",
     "2024",
     "Irvine, CA",
   );
-  const initialExperienceItem = new ExperienceItem(
-    "Texas Instruments",
-    "Software Engineer",
+  const initialEducationItem2 = new EducationItem(
+    "University of California, Berkeley",
+    "Computer Science",
+    "2016",
     "2020",
-    "2024",
-    "Irvine, CA",
-    "Worked on so and so projects",
+    "Berkeley, CA",
   );
-  const [educationList, setEducationList] = useState([initialEducationItem]);
-  const [experienceList, setExperienceList] = useState([initialExperienceItem]);
+  const initialExperienceItemArray = []
+  for(let i = 0; i < 5; i++){
+    const expItem = new ExperienceItem(
+      "Texas Instruments",
+      "Software Engineer",
+      "2020",
+      "2024",
+      "Irvine, CA",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi molestias dolores autem est pariatur, iusto qui nulla eligendi atque! Eos omnis porro quis quo voluptatum repudiandae repellendus beatae? Ut, iste!"    
+);
+    initialExperienceItemArray.push(expItem);
+  }
+  const [educationList, setEducationList] = useState([initialEducationItem, initialEducationItem2]);
+  const [experienceList, setExperienceList] = useState(initialExperienceItemArray);
 
   return (
     <>
@@ -45,7 +56,7 @@ function App() {
         experienceList={experienceList}
         setExperienceList={setExperienceList}
       />
-      <ResumePreview personalDetails={personalDetails} />
+      <ResumePreview personalDetails={personalDetails} educationList={educationList} experienceList={experienceList}/>
     </>
   );
 }
